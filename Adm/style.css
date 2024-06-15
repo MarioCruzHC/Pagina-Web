@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    color: #fff;
+}
+
+.menu-superior {
+    padding: 80px 30px 40px;
+    background-image: url('../Imgin/banner.png'); 
+    background-size:100%; /* Ajusta el tamaño de la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    padding-top: 130px; /* Ajusta el espacio superior según sea necesario */
+}
+
+.menu-superior ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu-superior ul li {
+    margin-right: 20px;
+}
+
+.menu-superior ul li:last-child {
+    margin-right: 0;
+}
+
+.menu-superior ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
+
+.menu-superior ul li a:hover {
+    color: #ffd700;
+}
+
+.desplegable {
+    position:sticky;
+}
+
+.contenido-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -150px; /* Ajusta la posición horizontal del menú desplegable */
+    width: 200px;
+    z-index: 1;
+    background-color: gray;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.desplegable:hover .contenido-desplegable {
+    display:inline-block;
+}
+
+.contenido-desplegable a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.contenido-desplegable a:hover {
+    color: #ffd700;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: black;
+}
+
+h1, h2, p {
+    margin: 20px 0;
+    text-align: center;
+    color: black;
+}
+
+.cita-container {
+    float:inline-start; /* Alinea el contenedor a la derecha */
+    margin-top: 20px;
+}
+
+.cita {
+    width: 20%; /* Ocupa el 40% del contenedor principal */
+    position: absolute; /* Establece el posicionamiento absoluto */
+    top: 50%; /* Alinea la parte superior de la cita al 50% del contenedor principal */
+    right: 1200px; /* Coloca la cita a la derecha */
+    transform: translateY(-50%); /* Centra verticalmente la cita */
+    font-style: italic;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+footer {
+    margin-top: auto;
+    background-color: #f2f2f2; /* Color de fondo del pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+}
+
+.acerca-de, .turnos, .imagen-derecha {
+    width: 30%; /* Ancho aproximado de cada sección */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+}
+
+.turnos {
+    border: 2px solid blue; /* Borde azul */
+    padding: 10px; /* Espaciado interno */
+}
+
+.imagen-derecha img {
+    max-width:60%; /* Ajusta la imagen al ancho del contenedor */
+    float: right;
+}
+

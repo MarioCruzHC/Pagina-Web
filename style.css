@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    color: #fff;
+}
+.menu-superior {
+    padding: 80px 30px 40px;
+    background-image: url('Imgin/banner.png'); 
+    background-size:100%; /* Ajusta el tamaño de la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    padding-top: 130px; /* Ajusta el espacio superior según sea necesario */
+}
+
+.menu-superior ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu-superior ul li {
+    margin-right: 20px;
+}
+
+.menu-superior ul li:last-child {
+    margin-right: 0;
+}
+
+.menu-superior ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
+
+.menu-superior ul li a:hover {
+    color: #ffd700;
+}
+
+.desplegable {
+    position:sticky;
+}
+
+.contenido-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -150px; /* Ajusta la posición horizontal del menú desplegable */
+    width: 200px;
+    z-index: 1;
+    background-color: gray;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.desplegable:hover .contenido-desplegable {
+    display:inline-block;
+}
+
+.contenido-desplegable a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.contenido-desplegable a:hover {
+    color: #ffd700;
+}
+.imagen-debajo-menu {
+    text-align: center; /* Centra la imagen horizontalmente */
+    padding-top: 0px; /* Ajusta el espacio entre el menú y la imagen */
+}
+
+.imagen-debajo-menu img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+}
+.texto-debajo-menu {
+    background-color: #FFDB58; /* Color de fondo amarillo mostaza */
+    text-align: left;
+    padding: 20px 0;
+}
+
+.contenedor-texto {
+    max-width: 800px; /* Ancho máximo del contenedor de texto */
+    margin: 0 auto; /* Centra el contenedor de texto horizontalmente */
+}
+
+.contenedor-texto h2 {
+    color: #54a206; /* Color de texto verde lima */
+}
+
+.contenedor-texto p {
+    color: #000; /* Color de texto negro */
+    font-size: 16px;
+    line-height: 1.5;
+}
+.contenido-adicional {
+    background-color: #000; /* Color de fondo negro */
+    color: #fff; /* Color de texto blanco */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Distribución en fila */
+    justify-content: space-between; /* Alineación horizontal */
+}
+
+.texto-izquierda, .texto-derecha {
+    width: 48%; /* Ancho del contenido */
+}
+
+.texto-derecha {
+    text-align: left; /* Alinea el texto a la izquierda */
+    display: flex; /* Distribución en fila */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.titulo-seguridad {
+    margin-left: 10px; /* Espacio entre el ícono y el título */
+}
+.texto-derecha img {
+    display: block; /* Mostrar el icono como bloque */
+    margin-bottom: 5px; /* Espaciado inferior */
+}
+.icono-seguridad {
+    width: 30px; /* Ancho del ícono */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+.SAbajo {
+    display: flex;
+    text-align: right;
+}
+.seccion {
+    clear: both; /* Evita que las secciones se superpongan */
+    margin-top: 20px; /* Espacio entre cada sección */
+}
+
+.contenido-izquierda {
+    float: left; /* Alinea los elementos a la izquierda */
+    width: 40%; /* Ancho del contenedor izquierdo */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+}
+
+.contenido-derecha {
+    float: right; /* Alinea los elementos a la derecha */
+    width: 60%; /* Ancho del contenedor derecho */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+}
+
+.contenido-izquierda img {
+    max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+}
+.neg {
+        color: black; /* Cambia el color del texto a negro */  
+    
+}
+.negt {
+    color: black; /* Cambia el color del texto a negro */  
+    margin-top: 100px; 
+
+}
+footer {
+    margin-top: 360px;
+    background-color: #f2f2f2; /* Color de fondo del pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+}
+
+.acerca-de, .turnos, .imagen-derecha {
+    width: 30%; /* Ancho aproximado de cada sección */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+}
+
+.turnos {
+    border: 2px solid blue; /* Borde azul */
+    padding: 10px; /* Espaciado interno */
+}
+
+.imagen-derecha img {
+    max-width:60%; /* Ajusta la imagen al ancho del contenedor */
+    float: right;
+}
